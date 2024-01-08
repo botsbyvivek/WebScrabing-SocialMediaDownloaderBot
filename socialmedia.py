@@ -46,7 +46,7 @@ def download_and_send_video(link, chat_id, update: Update, context: CallbackCont
 
             if video_source:
                 try:
-                    BOT_TOKEN = config("BOT_TOKEN")
+                    BOT_TOKEN = "6966053677:AAFtMJVBexv0qYP-WS1JIxvoYUGyyiao8SM"
                     telegram_bot_token = BOT_TOKEN
                     bot = Bot(token=telegram_bot_token)
                     response = requests.get(video_source, stream=True)
@@ -69,7 +69,7 @@ def download_and_send_video(link, chat_id, update: Update, context: CallbackCont
 
 def main():
     # Write Your Bot Token
-    BOT_TOKEN = config("BOT_TOKEN")
+    BOT_TOKEN = "6966053677:AAFtMJVBexv0qYP-WS1JIxvoYUGyyiao8SM"
     updater = Updater(token=BOT_TOKEN, use_context=True) 
     dp = updater.dispatcher
 
